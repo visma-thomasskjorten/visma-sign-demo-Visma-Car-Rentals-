@@ -1,0 +1,49 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Visma Car Rentals";
+}
+
+<div class="text-center">
+    <h1>Welcome to Visma Car rentals!</h1>
+    <h3>Choose your car</h3>
+
+    <div>
+        <a asp-area="" asp-page="/RentCar" asp-route-cartype="Small Car">
+            <div class="caralternative">
+                <img class="carimage" src="~/img/smartfourtwo.jpg" alt="Small Car">
+                <div class="container">
+                    <p>Small Car</p>
+                </div>
+            </div>
+        </a>
+
+        <a asp-area="" asp-page="/RentCar" asp-route-cartype="Estate Car">
+            <div class="caralternative">
+                <img class="carimage" src="~/img/passat.jpeg" alt="Estate Car">
+                <div class="container">
+                    <p>Estate Car</p>
+                </div>
+            </div>
+        </a>
+
+        <a asp-area="" asp-page="/RentCar" asp-route-cartype="Big Car">
+            <div class="caralternative">
+                <img class="carimage" src="~/img/teslax.jpg" alt="Big Car">
+                <div class="container">
+                    <p>Big Car</p>
+                </div>
+            </div>
+        </a>
+
+        <a asp-area="" asp-page="/RentCar" asp-route-cartype="Sportscar">
+            <div class="caralternative">
+                <img class="carimage" src="~/img/porche911.jpg" alt="Sportscar">
+                <div class="container">
+                    <p>Sportscar</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>

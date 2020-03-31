@@ -1,0 +1,38 @@
+﻿@page
+@model RentCarModel
+@{
+    ViewData["Title"] = "Visma Car Rentals";
+}
+
+<h1>You have chosen to rent a @Model.CarType</h1>
+
+<h3>To continue your rental, fill out the fields below</h3>
+
+<br/>
+
+<form action="ThankYou" method="get">
+    <table>
+        <tr>
+            <td><label for="fname">Car type:</label></td>
+            <td><input type="text" id="car" name="car" value="@Model.CarType" readonly></td>
+        </tr>
+        <tr>
+            <td><label for="fname">First name:</label></td>
+            <td><input type="text" id="fname" name="fname"></td>
+        </tr>
+        <tr>
+            <td><label for="fname">Last name:</label></td>
+            <td><input type="text" id="lname" name="lname"></td>
+        </tr>
+        <tr>
+            <td><label for="fname">Email:</label></td>
+            <td><input type="email" id="fname" name="email"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Continue"></td>
+        </tr>
+    </table>    
+</form>
+    
+    
